@@ -20,6 +20,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   mockito: any
+  flutter_launcher_icons: any
+
+flutter_icons:
+  image_path: "assets/icons/logo.png"
+  android: true
+  ios: true
 
 flutter:
 

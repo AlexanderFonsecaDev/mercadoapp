@@ -11,6 +11,9 @@ import 'package:mercadoapp/ui/details/details_screen.dart';
 
 class Body extends StatelessWidget {
   RemoteDataSource _apiResponse = RemoteDataSource();
+
+  Stock productsCollection;
+
   @override
   Widget build(BuildContext context) {
     return Column(

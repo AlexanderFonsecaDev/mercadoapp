@@ -1,16 +1,16 @@
-# mercadoapp
+## Prueba de desarrollo Mercado Libre
 
-Challenge de mercado libre
+Esta aplicación está hecha en flutter, lo que me permite asegurar que funciona correctamente en plataformas android y IOS.
 
-## Getting Started
+Para el desarrollo de la actividad leí la documentación de https://developers.mercadolibre.com.co/es_co/items-y-busquedas donde explican como usar la API y que tipo de datos retorna.
 
-This project is a starting point for a Flutter application.
+La aplicación permite listar los productos por una categoría seleccionada, hacer búsquedas de un producto es especifico y tambien ver el detalle de cada uno de los productos.
 
-A few resources to get you started if this is your first Flutter project:
+EL funcionamiento interno de la aplicación usa modelos para manejar los datos dentro de la misma, luego creamos el cliente que es de donde se hacen las peticiones a la API.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+En la carpeta UI están las vistas del usuario y en cada una de ellas validamos si la solicitud fue exitosa en caso de ser así nos mostrara la información.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cómo usarla
+
+Para poder probar la aplicación tenemos dos formas una que seria atraves del androidstudio o la otra seria instalando el APK.
+

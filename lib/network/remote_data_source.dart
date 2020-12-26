@@ -45,6 +45,22 @@ class RemoteDataSource {
     }
   }
 
+  Future<Result> searchProducts(String name) async {
+    try {
+      final response = await product_category_client.request(requestType: RequestType.GET, path: "sites/MCO/search?q=" + name);
+      if (response.statusCode == 200) {
+        return Result<Stock>.success(Stock.fromRawJson(response.body));
+      } else {
+        return Result.error("Products list not available");
+      }
+    } catch (error) {
+      print(error);
+      return Result.error("Something went wrong!");
+    }
+  }
+
+
+
 
 
 
